@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "AWSSDK.DynamoDBv2": "3.2.8-rc",
+    "NETStandard.Library": "1.6.0",
+    "NLog": "4.4.0-beta12",
+    "NLog.Extensions.Logging": "1.0.0-rtm-alpha4"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
