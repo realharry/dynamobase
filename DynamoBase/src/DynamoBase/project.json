@@ -1,5 +1,29 @@
 ﻿{
-  "version": "1.0.0-*",
+  "name": "DynamoBase",
+  "version": "1.0.1-*",
+  "title": "AWSCore.DynamoBase",
+  "description": "Base class library for AWS DynamoDB (.Net Core).",
+  "copyright": "Copyright 2016",
+  "authors": [
+    "Harry Y"
+  ],
+
+  "packOptions": {
+    "summary": "Helper library for AWS DynamoDB.",
+    "tags": [
+      "AWS",
+      "DynamoDB",
+      "DotNet Core",
+      "CSharp"
+    ],
+    "owners": [
+      "Harry Y"
+    ],
+    "releaseNotes": "Updated the package id.",
+    "projectUrl": "https://github.com/awscore/dynamobase",
+    "licenseUrl": "https://github.com/awscore/dynamobase/blob/master/LICENSE",
+    "requireLicenseAcceptance": false
+  },
 
   "dependencies": {
     "AWSSDK.DynamoDBv2": "3.2.8-rc",
