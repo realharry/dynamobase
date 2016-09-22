@@ -6,7 +6,7 @@ using Amazon.DynamoDBv2;
 using Amazon.Runtime;
 using AWSCore.DynamoBase.Clients;
 
-namespace MiniPickupServer.DynamoLib.Clients.Impl
+namespace AWSCore.DynamoBase.Clients.Impl
 {
     public class DefaultDynamoDBClientContext : IDynamoDBClientContext
     {
