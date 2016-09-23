@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AWSCore.DynamoBase.Clients
 {
+    // AmazonDynamoDBClient holder.
     public interface IDynamoDBClientContext
     {
         AmazonDynamoDBClient Client { get; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 namespace AWSCore.DynamoBase.Tables.Core
 {
     // Note: Normally, IDynamoTable should be used as a type instead of InstantDynamoTable.
+    // "Instant" table can be dynamically created/deleted.
     public interface IInstantDynamoTable : IDynamoTable
     {
         // Returns true if the table is present.

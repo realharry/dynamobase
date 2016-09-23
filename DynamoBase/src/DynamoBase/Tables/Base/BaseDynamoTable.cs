@@ -2,17 +2,17 @@
 using Amazon.DynamoDBv2.Model;
 using AWSCore.DynamoBase.Clients;
 using AWSCore.DynamoBase.Tables.Core;
-using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// using NLog;
 
 namespace AWSCore.DynamoBase.Tables.Base
 {
     public abstract class BaseDynamoTable : IInstantDynamoTable
     {
-        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        // private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         private readonly IDynamoDBClientContext clientContext;
 
@@ -80,7 +80,9 @@ namespace AWSCore.DynamoBase.Tables.Base
                     catch (Exception ex)
                     {
                         // What to do???
-                        Logger.Warn($"Failed to load the table, {Name}. {ex.Message}");
+                        // Logger.Warn($"Failed to load the table, {Name}. {ex.Message}");
+                        System.Diagnostics.Debug.WriteLine($"Failed to load the table, {Name}. {ex.Message}");
+                        // throw ex;
                     }
                 }
                 return table;
@@ -125,7 +127,8 @@ namespace AWSCore.DynamoBase.Tables.Base
                 catch (Exception ex)
                 {
                     // What to do???
-                    Logger.Warn($"Failed to list tables, {Name}. {ex.Message}");
+                    // Logger.Warn($"Failed to list tables, {Name}. {ex.Message}");
+                    throw ex;
                 }
 
             } while (lastEvaluatedTableName != null);
@@ -151,7 +154,8 @@ namespace AWSCore.DynamoBase.Tables.Base
             catch (Exception ex)
             {
                 // What to do???
-                Logger.Warn($"Failed to delete the table, {Name}. {ex.Message}");
+                // Logger.Warn($"Failed to delete the table, {Name}. {ex.Message}");
+                throw ex;
             }
         }
 

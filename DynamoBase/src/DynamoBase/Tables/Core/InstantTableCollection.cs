@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 namespace AWSCore.DynamoBase.Tables.Core
 {
     // Note: Normally, ITableCollection or IEnumerableTableCollection should be used instead of IInstantTableCollection as a type.
+    // "Instant" collection can be dynamically created or deleted (e.g., for unit testing purposes, etc.).
     public interface IInstantTableCollection : IEnumerableTableCollection
     {
         Task CreateAllTablesAsync(bool recreateIfPresent = false);

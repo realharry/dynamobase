@@ -1,15 +1,15 @@
 ﻿using AWSCore.DynamoBase.Tables.Core;
-using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// using NLog;
 
 namespace AWSCore.DynamoBase.Registries.Base
 {
     public abstract class BaseTableCollectionRegistry : IInstantCollectionRegistry
     {
-        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        // private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         private readonly IDictionary<string, ITableCollection> tableCollections = new Dictionary<string, ITableCollection>();
         protected IDictionary<string, ITableCollection> TableCollections
@@ -27,7 +27,7 @@ namespace AWSCore.DynamoBase.Registries.Base
 
         public virtual ITableCollection GetTableCollection(string serviceURL, string tableSuffix)
         {
-            Logger.Info($"GetTableCollection() serviceURL = {serviceURL}; tableSuffix = {tableSuffix}.");
+            // Logger.Info($"GetTableCollection() serviceURL = {serviceURL}; tableSuffix = {tableSuffix}.");
 
             var key = GetCollectionKey(serviceURL, tableSuffix);
             if (!TableCollections.ContainsKey(key)) {

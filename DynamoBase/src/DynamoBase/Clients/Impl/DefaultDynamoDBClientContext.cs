@@ -8,8 +8,10 @@ using AWSCore.DynamoBase.Clients;
 
 namespace AWSCore.DynamoBase.Clients.Impl
 {
+    // TBD: Needs a better wasy to creat the client object.
     public class DefaultDynamoDBClientContext : IDynamoDBClientContext
     {
+        // Embedded AmazonDynamoDBClient.
         private AmazonDynamoDBClient client = null;
 
         public DefaultDynamoDBClientContext(AmazonDynamoDBClient client = null)

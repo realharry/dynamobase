@@ -1,5 +1,4 @@
 ﻿using AWSCore.DynamoBase.Tables.Core;
-using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +9,6 @@ namespace AWSCore.DynamoBase.Repositories.Base
 {
     public abstract class BaseDynamoRepository : IInstantRepository
     {
-        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-
         private readonly IDynamoTable dynamoTable;
         public BaseDynamoRepository(IDynamoTable dynamoTable)
         {

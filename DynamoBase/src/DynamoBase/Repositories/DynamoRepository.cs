@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace AWSCore.DynamoBase.Repositories
 {
+    // Currently, 
+    // each "repository" is associated with one DynamoDB table. 
     public interface IDynamoRepository : IDataRepository
     {
         IDynamoTable DynamoTable { get; }

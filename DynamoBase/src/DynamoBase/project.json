@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "DynamoBase",
-  "version": "1.0.4-*",
+  "version": "1.0.5-*",
   "title": "AWSCore.DynamoBase",
   "description": "Base class library for AWS DynamoDB (.Net Core).",
   "copyright": "Copyright 2016",
@@ -19,7 +19,7 @@
     "owners": [
       "Harry Y"
     ],
-    "releaseNotes": "Upgraded DynamoDBv2 to 3.3.0.",
+    "releaseNotes": "Removed dependency on NLog.",
     "projectUrl": "https://github.com/awscore/dynamobase",
     "licenseUrl": "https://github.com/awscore/dynamobase/blob/master/LICENSE",
     "requireLicenseAcceptance": false
@@ -27,9 +27,7 @@
 
   "dependencies": {
     "AWSSDK.DynamoDBv2": "3.3.0",
-    "NETStandard.Library": "1.6.0",
-    "NLog": "4.4.0-beta12",
-    "NLog.Extensions.Logging": "1.0.0-rtm-alpha4"
+    "NETStandard.Library": "1.6.0"
   },
 
   "frameworks": {
