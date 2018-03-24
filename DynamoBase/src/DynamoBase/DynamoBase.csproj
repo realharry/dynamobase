@@ -4,15 +4,15 @@
     <Description>Base class library for AWS DynamoDB (.Net Core).</Description>
     <Copyright>Copyright 2016</Copyright>
     <AssemblyTitle>AWSCore.DynamoBase</AssemblyTitle>
-    <VersionPrefix>1.0.5</VersionPrefix>
+    <VersionPrefix>1.0.6</VersionPrefix>
     <Authors>Harry Y</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
     <AssemblyName>DynamoBase</AssemblyName>
     <PackageId>DynamoBase</PackageId>
     <PackageTags>AWS;DynamoDB;DotNet Core;CSharp</PackageTags>
     <PackageReleaseNotes>Removed dependency on NLog.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/awscore/dynamobase</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/awscore/dynamobase/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://gitlab.com/awscore/dynamobase</PackageProjectUrl>
+    <PackageLicenseUrl>https://gitlab.com/awscore/dynamobase/blob/master/LICENSE</PackageLicenseUrl>
     <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.0" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.6.2" />
   </ItemGroup>
 
 </Project>
